@@ -1,9 +1,15 @@
-function createCard(title, description, image) {
+function createCard(title, description, image) 
+{
+    
     return `
         <div class="card">
             <img src="${image}" alt="${title} Image" class="card-image">
             <h3 class="card-title">${title}</h3>
             <p class="card-description">${description}</p>
+            <div class="status-indicator">
+                <div class="status-dot"></div>
+                <div class="status-ring"></div>
+            </div>
         </div>
     `;
 }
