@@ -81,3 +81,4 @@ const gamesGrid = document.getElementById("games-grid");
 games.forEach(game => {
     gamesGrid.innerHTML += createCard(game.title, game.description, game.image);
 });
+
