@@ -3,20 +3,79 @@
     <head>
         <title>Roblox System Portfolio</title>
         <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     </head>
-    <body class="background">
-        <div class="div">
+    <body class="background body">
+        <!--Adding Navigation Bar-->
+        <nav class="navbar">
+            <a href="index.html">HOME</a>
+            <a href="#">ABOUT</a>
+            <a href="#">CONTACT</a>
+        </nav>
 
-            <h1 class="h1">SYSTEM ENGINEER</h1>
-            <h2 class="h2"><em>GAME DEVELOPER</em></h2>
+        <!--sidebar-->
+        <div class="layout">
+            <aside class="sidebar">
+                <h2 class="logo">SYSTEM</h2>
+                <!--search-->
+                <input type="text" placeholder="Search..." class="search">
+                <!--navigation-->
+                <nav class="side-links">
+                    <a href="index.html">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Projects</a>
+                    <a href="#">Games</a>
+                    <a href="#">Contact</a>
 
-            <!--skills-->
-            <p class="p">Client - Server Architecture | Gameplay Systems | AI Systems</p>
-
-            <!--Buttons-->
-            <a class="a" href="https://github.com/arindam-codes">View Github</a>
-
-            <a class="a" href="https://www.roblox.com/games/90378282464127/Hello-Valentine">My First Game</a>
+                </nav>
+            </aside>
         </div>
+
+        <div>
+            <header class="content hero">
+
+                <h1 class="h1">SYSTEM ENGINEER</h1>
+                <h2 class="h2"><em>GAME DEVELOPER</em></h2>
+
+                <!--skills-->
+                <p class="p">Client - Server Architecture | Gameplay Systems | AI Systems</p>
+
+                <!--Buttons-->
+                
+                <a class="a" href="https://github.com/arindam-codes">View Github</a>
+
+                <a class="a" href="https://www.roblox.com/games/90378282464127/Hello-Valentine">My First Game</a>
+                
+            </header>
+
+            
+
+            <!--Adding Games Section-->
+            <main class="games-section content">
+                <h2 class="section-title">GAMES</h2>
+                <div class="game-grid">
+                    <div class="card">PROJECT1</div>
+                    <div class="card">PROJECT2</div>
+                    <div class="card">PROJECT3</div>
+                    <div class="card">PROJECT4</div>
+                    <div class="card">PROJECT5</div>
+                    <div class="card">PROJECT6</div>
+                </div>
+            </main>
+
+            <!--Adding System Section-->
+            <main class="system-section content">
+                <h2 class="section-title">SYSTEMS</h2>
+                <div class="system-grid">
+                    <div class="card">COMBAT FRAMEWORK</div>
+                    <div class="card">INVENTORY SYSTEM</div>
+                    <div class="card">CAPE SYSTEM</div>
+                    <div class="card">DATASTORE MANAGER</div>
+                    <div class="card">PLAYER STATS</div>
+                    <div class="card">PROGRESS TRACKER</div>
+                </div>
+            </main>
+        </div>
+        
     </body>
 </html>
