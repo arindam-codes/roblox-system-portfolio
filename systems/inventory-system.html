@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Combat Framework</title>
+        <link rel="stylesheet" href="../css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    </head>
+    <body class="background body">
+        <!--Adding Navigation Bar-->
+        <nav class="navbar">
+            
+            <a href="../index.html">HOME</a>
+        </nav>
+
+        <section class="system-page">
+            <h1 class="section-title">Combat Framework</h1>
+                <h2 class="h2">Overview</h2>
+                    <p class="p">Server-authoritative combat system designed for secure multiplayer gameplay.
+                                Handles hit detection, damage pipelines and ability logic while preventing
+                                client-side exploits.
+                    </p>
+                <h2 class="h2">Features</h2>
+                    <ul class="p">
+                        <li>Server-side hit detection using raycasting and region checks</li>
+                        <li>Flexible damage pipeline with support for modifiers and effects</li>
+                        <li>Ability system with cooldowns, resource costs and custom logic</li>
+                        <li>Anti-cheat measures to prevent speed hacks, teleportation and damage manipulation</li>
+                    </ul>
+                <h2 class="h2">Architecture</h2>
+                    <pre class="code">
+                        Client Input
+                        ├── RemoteEvent
+                            ├── Server-side Validation
+                                ├── Hit Detection (Raycasting/Region Checks)
+                                    ├── Damage Calculation (Base + Modifiers)
+                                        ├── Replication
+                    </pre>
+                <h2 class="p">Code Example</h2> 
+                    <pre class="code">
+                        local funcrion dealDamage(player, target, amount)
+                            if not target then return end
+                            
+                            local humanoid = target:FindFirstChild("Humanoid")
+                            
+                            if humanoid then
+                                humanoid:TakeDamage(amount)
+                            end
+                        end
+                    </pre>
+                <h2 class="h2">Demo Video</h2>
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Live Demo"frameborder="0" allowfullscreen></iframe>
+                    </div>
+                <h3 class="h2">Source Code</h3>
+                    <a class="a" href="https://github.com/arindam-codes" target="_blank">View on GitHub</a>
+        </section>
+    </body>
+</html>
+        
