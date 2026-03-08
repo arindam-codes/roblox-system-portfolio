@@ -68,7 +68,7 @@ body
 .navbar
 {
     color: #e2e8f0;
-    background-color: #0f172a;
+    background-color: transparent;
     position: fixed;
     top: 0;
     right: 0;
@@ -101,7 +101,7 @@ body
     backdrop-filter: blur(10px);
     border: 1px solid rgba(56, 189, 248, 0.1);
     border-radius: 12px;
-    padding: 30px 20px;
+    padding: 30px 30px;
     text-align: center;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.5);
@@ -117,13 +117,33 @@ body
     background: rgba(30, 41, 59, 0.8);
 }
 
-/* Game Section */
-
-.games-section
-{
-    max-width: 1400px;
-    margin: 40px auto;
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 25px;
     padding: 20px;
+}
+
+.card_image
+{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.card-title
+{
+    font-size: 16px;
+    color: #e2e8f0;
+    margin-bottom: 10px 0;
+}
+
+.card-description
+{
+    font-size: 12px;
+    color: #94a3b8;
 }
 
 .section-title 
@@ -135,13 +155,14 @@ body
     padding-left: 15px;
 }
 
-.game-grid 
-{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 20px;
-}
+/* Game Section */
 
+.games-section
+{
+    max-width: 1400px;
+    margin: 40px auto;
+    padding: 20px;
+}
 
 /* System Section */
 .system-section
@@ -151,12 +172,6 @@ body
     padding: 20px;
 }
 
-.system-grid
-{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 20px;
-}
 
 /* Sidebar */
 
@@ -173,14 +188,14 @@ body
 .sidebar
 {
     width: 260px;
-    background-color: #1e293b;
+    background: rgba(15, 23, 42, 0.95);
     color: #e2e8f0;
     padding: 30px 20px;
     position: fixed;
     top: 70px;
     left: 0;
     height: 100vh;
-    border-right: 1px solid #0f172a;
+    border-right: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .side-links
